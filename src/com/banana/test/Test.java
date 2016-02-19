@@ -3,7 +3,9 @@ package com.banana.test;
 public class Test {
 
     public static void main(String[] args) {
-        System.out.println('5');
+        MessageProvider messageProvider = new MessageProviderImpl();
+        MessageRenderer messageRenderer = new MessageRendererImpl();
+        messageRenderer.render(messageProvider);
     }
 	
 }
