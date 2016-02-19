@@ -7,6 +7,7 @@ public class Test {
         MessageProvider messageProvider = new MessageProviderImpl();
         MessageRenderer messageRenderer = new MessageRendererImpl();
         messageRenderer.render(messageProvider);
+        System.out.println("Finished!");
     }
 	
 }
